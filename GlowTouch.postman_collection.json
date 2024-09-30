@@ -1,0 +1,48 @@
+{
+	"info": {
+		"_postman_id": "221a3df9-4c4c-427f-ae3b-52155970dfb9",
+		"name": "GlowTouch",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13011102"
+	},
+	"item": [
+		{
+			"name": "createEmployee Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcyNTg0MjQxNiwianRpIjoiYjcyMzJiYTgtMmQ1Yi00ZDViLTkzZTEtYzQwOTNjYjdhNzE4IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImZvcmlzX2NoYWxsZW5nZSIsIm5iZiI6MTcyNTg0MjQxNiwiY3NyZiI6IjI1OTJkZWI4LWI4N2MtNGRjMC1iNGIxLTcxYWQ0ZmIyY2MxZiIsImV4cCI6MTcyNTg0NjAxNn0.B5MAf8W4R5bM5vt2Xlu-ju6_UEnkgx4KUcCcHH4SCNI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\"id\": 1, \"name\": \"Item 1\"},\r\n    {\"id\": 2, \"name\": \"Item 2\"},\r\n    {\"id\": 3, \"name\": \"Item 3\"}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/items",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"items"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
